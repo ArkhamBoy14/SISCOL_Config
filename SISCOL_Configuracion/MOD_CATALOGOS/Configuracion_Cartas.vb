@@ -98,10 +98,10 @@ Public Class Configuracion_Cartas
 
     Sub ImprimirDocumento()
         If opcDRO.Checked Then
-            GenerarReporte("R_CARTA_DRO_CACHAC")
+            GenerarReporte("R_CARTA_DRO_CICCH")
         End If
         If opcRTEC.Checked Then
-            GenerarReporte("R_CARTAS_RTEC_CACHAC")
+            GenerarReporte("R_CARTAS_RTEC_CICCH")
         End If
     End Sub
 
