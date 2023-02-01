@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SISCOL_Configuracion</RootNamespace>
+    <AssemblyName>SISCOL_Configuracion</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <ProjectGuid>{C8F50D0A-D1AA-4CB0-902D-4A8BD6F013A8}</ProjectGuid>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.2.Drawing, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxDiagram.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGantt.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGauges.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxRichEdit.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpreadsheet.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.Bootstrap.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.DemoTheme.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.Mvc.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.Mvc5.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2.Web, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2.Web.WebForms, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\IceTeaGroup\Wisej 2.5\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Framework.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Wisej.Framework.Design\v4.0_2.0.0.0__17bef35e11b84171\Wisej.Framework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.NavigationBar">
+      <HintPath>..\..\iSISCOL\packages\Wisej.Web.Ext.NavigationBar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Themes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Web" />
+    <Import Include="Wisej.Web" />
+    <Import Include="Wisej.Web.VisualBasic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.html" />
+    <Content Include="Global.asax" />
+    <Content Include="ReportView.aspx" />
+    <Content Include="Resources\Images\Save Filled-64.png" />
+    <Content Include="Resources\LOGOS\CICCH\ENCABEZADO1_20220718125721.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\ENCABEZADO_CICTAB.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\ENCABEZADO_IMG_112062019113231.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\ENCABEZADO_IMG_117062019150709.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\ENCABEZADO_IMG_127062019115648.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\ENCABEZADO_IMG_127062019121531.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\ENCABEZADO_IMG_227062019115656.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\ENCABEZADO_IMG_227062019121536.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\FONDO_IMG27062019121542.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\logo-cicch.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\PIE_PAGINA_1_20220718125741.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\PIE_PAGINA_IMG17062019150727.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\PIE_PAGINA_IMG27062019115715.jpg" />
+    <Content Include="Resources\LOGOS\CICCH\PIE_PAGINA_IMG27062019121548.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles\AspNetPanelII.Designer.vb">
+      <DependentUpon>AspNetPanelII.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\AspNetPanelII.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\ComboGridSax.Designer.vb">
+      <DependentUpon>ComboGridSax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ComboGridSax.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\combosax.Designer.vb">
+      <DependentUpon>combosax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\combosax.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ComboSaxWisej.Designer.vb">
+      <DependentUpon>ComboSaxWisej.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ComboSaxWisej.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Combosax_B.Designer.vb">
+      <DependentUpon>Combosax_B.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Combosax_B.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ComboWisax.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\DGVSpan.Designer.vb">
+      <DependentUpon>DGVSpan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\DGVSpan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\MessageB.Designer.vb">
+      <DependentUpon>MessageB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\MessageB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\SaxNavigator.Designer.vb">
+      <DependentUpon>SaxNavigator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\SaxNavigator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Datasets\DataSet_pCARTA_IMPRIMIR.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_pCARTA_IMPRIMIR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop1.Designer.vb">
+      <DependentUpon>Desktop1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MOD_CATALOGOS\Configuracion_Cartas.Designer.vb">
+      <DependentUpon>Configuracion_Cartas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MOD_CATALOGOS\Configuracion_Cartas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MOD_CATALOGOS\Socios_Actualizar_Activos.Designer.vb">
+      <DependentUpon>Socios_Actualizar_Activos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MOD_CATALOGOS\Socios_Actualizar_Activos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Notificaciones.Designer.vb">
+      <DependentUpon>Notificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notificaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Configuracion_Inicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion_Inicial.Designer.vb">
+      <DependentUpon>Configuracion_Inicial.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\R_CARTAS_RTEC_CICCH.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\R_CARTA_DRO.Designer.vb">
+      <DependentUpon>R_CARTA_DRO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\R_CARTA_DRO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\R_CARTA_DRO_CICCH.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportView.aspx.designer.vb">
+      <DependentUpon>ReportView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportView.aspx.vb">
+      <DependentUpon>ReportView.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Utilidades\Utilidades.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controles\AspNetPanelII.resx">
+      <DependentUpon>AspNetPanelII.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ComboGridSax.resx">
+      <DependentUpon>ComboGridSax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\combosax.resx">
+      <DependentUpon>combosax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ComboSaxWisej.resx">
+      <DependentUpon>ComboSaxWisej.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Combosax_B.resx">
+      <DependentUpon>Combosax_B.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ComboWisax.resx">
+      <DependentUpon>ComboWisax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\DGVSpan.resx">
+      <DependentUpon>DGVSpan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\MessageB.resx">
+      <DependentUpon>MessageB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\SaxNavigator.resx">
+      <DependentUpon>SaxNavigator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop1.resx">
+      <DependentUpon>Desktop1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MOD_CATALOGOS\Configuracion_Cartas.resx">
+      <DependentUpon>Configuracion_Cartas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MOD_CATALOGOS\Socios_Actualizar_Activos.resx">
+      <DependentUpon>Socios_Actualizar_Activos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion_Inicial.resx">
+      <DependentUpon>Configuracion_Inicial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notificaciones.resx">
+      <DependentUpon>Notificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\R_CARTAS_RTEC_CICCH.resx">
+      <DependentUpon>R_CARTAS_RTEC_CICCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\R_CARTA_DRO.resx">
+      <DependentUpon>R_CARTA_DRO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\R_CARTA_DRO_CICCH.resx">
+      <DependentUpon>R_CARTA_DRO_CICCH.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.json" />
+    <Content Include="Datasets\DataSet_pCARTA_IMPRIMIR.xsc">
+      <DependentUpon>DataSet_pCARTA_IMPRIMIR.xsd</DependentUpon>
+    </Content>
+    <None Include="Datasets\DataSet_pCARTA_IMPRIMIR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_pCARTA_IMPRIMIR.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Datasets\DataSet_pCARTA_IMPRIMIR.xss">
+      <DependentUpon>DataSet_pCARTA_IMPRIMIR.xsd</DependentUpon>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56958/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
